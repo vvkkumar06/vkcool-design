@@ -28,11 +28,16 @@ header li.nav-item a.nav-link{
     font-weight: 800;
     position: relative;
 }
-header li.nav-item a.nav-link:hover, header li.nav-item a.nav-link.active{
+ header li.nav-item a.nav-link.active{
     color: #23e !important;
     position: relative;
 }
-header li.nav-item a.nav-link:hover::after, header li.nav-item a.nav-link.active::after{
+header li.nav-item a.nav-link:hover{
+    color: #b23 !important;
+    position: relative;
+}
+
+header li.nav-item a.nav-link.active::after{
     position:absolute;
     content:'';
     padding:20px;
@@ -65,15 +70,13 @@ h1.vk-title{
     letter-spacing: 0em !important;
     font-size:100px;
     font-weight: 1000;
+    text-transform: capitalize;
+    display:inline-block;
 }
 
 .vk-title span{
-    
-    margin-left:0px;
-    margin-right:0px;
-}
-.vk-title{
-    text-transform: capitalize;
+    margin-left:0px !important;
+    margin-right:0px !important;
 }
 
 .test{
