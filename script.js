@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+ 
     $(".navbar-nav li a[href^='#']").on('click', function(e) {
 
     // This sets the hash
